@@ -1,57 +1,133 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>BCA Admissions by CelinaPeralta</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">BCA Admissions</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/CelinaPeralta/bcaadmissions.github.io" class="btn">View on GitHub</a>
-      <a href="https://github.com/CelinaPeralta/bcaadmissions.github.io/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/CelinaPeralta/bcaadmissions.github.io/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<head>
+    <link rel="icon" type="image/png" href="media/bcalogo.png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='navigationbar.css' rel="stylesheet">
+    <link href="parallax.css" rel="stylesheet" type="text/css">
+    <link href="animate.css" rel="stylesheet" type="text/css">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+    <title>Bergen County Academies</title>
+</head>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<body class="body">
+    <nav>
+        <ul class='cf'>
+            <li><a href="index.html">Home</a></li>
+            <li><a class='dropdown' href="academies.html">Academies</a>
+                <ul>
+                    <li><a href='apply.html'>Apply</a></li>
+                </ul>
+            </li>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+            <li><a class='dropdown' href="dayinlife.html">Student Life</a>
+                <ul>
+                    <li><a href="clubs.html">Clubs</a></li>
+                    <li><a href="electives.html">Electives</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="sports.html">Sports</a></li>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+                </ul>
+            </li>
+            <li><a class='dropdown' href="">Opportunities</a>
+                <ul>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="globaleducation.html">Global Education</a></li>
+                    <li><a href="seniorexperience.html">Senior Experience</a></li>
+                </ul>
+            </li>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        </ul>
+    </nav>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+    <!-- This is where I'm going to try to do parallax -->
+    <div class="parallaxbody">
+        <div class="content">
+            <div class="parallax-bg">
+                <h1 style="padding: 0px;">BERGEN COUNTY ACADEMIES</h1></div>
+            <button id='button' style="z-index: 1;"></button>
+        </div>
+    </div>
 
-<p>You can <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/#mentioning-users-and-teams" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        var parallaxBg = $('div.parallax-bg');
+        (function () {
+            var documentEl = $(document);
+            documentEl.on('scroll', function () {
+                var currScrollPos = documentEl.scrollTop();
+                parallaxBg.css('background-position', '0' + -currScrollPos / 4 + 'px');
+            });
+        })();
+        var images = new Array('media/Copy%20of%2006_O3_DSC_8248%20music%20orchestra.jpg', 'media/Copy%20of%20754_15820967062_o%20Global%20Education.jpg', 'media/Copy%20of%20Aishwarya%20Raja%20Senior%20Experience%20at%20Lundbeck%20Research%20USA%20(Mentor%20Noel%20Boyle).jpg', 'media/Copy%20of%20Baseball%20VoTech%20Champs%20sports.JPG', 'media/Copy%20of%20IMG_0878%20research.JPG', 'media/Copy%20of%20IMG_0908%20amst.JPG', 'media/Copy%20of%20IMG_4083%202%20atcs.JPG');
+        var nextimage = 0;
+        doSlideshow();
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+        function doSlideshow() {
+            if (nextimage >= images.length) {
+                nextimage = 0;
+            }
+            // parallaxBg.css('transition', 'background 1s linear');
+            parallaxBg.css('background-image', 'url("' + images[nextimage++] + '")').fadeIn(2000, function () {
+                // parallaxBg.css('transition','all 0.2 ease');
+                setTimeout(doSlideshow, 5000);
+            });
+        }
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+        $("#button").click(function () {
+            $('html, body').animate({
+                scrollTop: $(".welcome").offset().top - 50
+            }, 2000);
+        });
+    </script>
+    <!-- and here is where i most likely gave up -->
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/CelinaPeralta/bcaadmissions.github.io">BCA Admissions</a> is maintained by <a href="https://github.com/CelinaPeralta">CelinaPeralta</a>.</span>
+    <div class='welcome'>
+        <h1 style='text-align: left;'>Welcome to the Bergen County Academies Admissions Site!</h1>
+        <p>The Bergen County Academies is a free public magnet high school of choice for Bergen County Residents located on the Dr. John Greico Campus in Hackensack, New Jersey. We offer students a unique high school experience that combines comprehensive academics with technical and professional courses. We encourage our students to choose an academy concentration based upon their interests rather than a future career choice.</p>
+        <br>
+        <p>Pursue your passion for science, art, computers, music, theatre, cooking, design, or finance-our programs will allow you to explore your interest while preparing you to meet the academic challenge of college. You may complement your studies with electives and clubs that cross academy boundaries; you are not limited to study in just one field. Students receive a fine academic background that prepares them well for postsecondary study in any field they choose.</p>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+    </div>
+    <div id="accolades">
+        <h1 style='text-align: left;'>Accolades</h1>
+        <ul style="padding: 10px 50px; text-align: left;">
+            <li style="list-style-type: none;">Named a 2015 <strong>National Blue Ribbon School</strong> by the U.S. Department of Education.</li>
+            <li style="list-style-type: none;">Recognized as the <b>#5 School</b> in the Nation by Newsweek 2015.</li>
+            <li style="list-style-type: none;">Home of 6 Intel Science Talent Search Finalists in the past six years.</li>
+            <li style="list-style-type: none;">Home of a member of the 2015 U.S. International Math Olympiad Team.</li>
+        </ul>
+    </div>
+    <div id="apply">
+        <div>
+            <h2>If you would like to <a href='apply.html' style="text-decoration: none; color: #EED900; text-shadow: 1px;">apply</a> to the Bergen County Academies: </h2>
+            <br>
+            <ol class="youmust">
+                <li>1. You must be a <strong>resident of Bergen County</strong> when you complete your application.</li>
+                <li>2. You must be in the <strong>8th grade by September 2016.</strong></li>
+                <li>3. If accepted <strong>you will begin your 9th grade year in September 2017;</strong> we do not accept transfer students or upperclassmen.</li>
 
-    </section>
+            </ol>
 
-  
-  </body>
+            <ul>
+        </div>
+    </div>
+    <div id='info'>
+        <li>The Bergen County Academies in Hackensack, New Jersey was among the 285 public and 50 private schools nationwide to be recognized as 2015 National Blue Ribbon Schools. Bergen County Technical Schools Superintendent Dr. Howard Lerner, BCA Principal Mr. Russell Davis, and Mr. William Pavlu represented the school at a gala ceremony in Washington, D.C on November 9 and 10, 2015. Bergen County Academies was awarded Blue Ribbon status in the category of Exemplary High Performing Schools, a designation that acknowledges BCA as one of New Jersey's highest performing schools as measured by state assessments or nationally normed tests, student performance, and high school graduation rates.</li>
+        </ul>
+    </div>
+    <br>
+    <div class="footer">
+        <p><b>Admissions Information Line: </b>201-343-6000 ext 2321
+            <br><b>Email:</b> admissions@bergen.org</p>
+
+    </div>
+
+
+
+</body>
+
+
 </html>
