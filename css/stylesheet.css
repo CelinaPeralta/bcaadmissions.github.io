@@ -402,6 +402,9 @@
      .welcome h1 {
          font-size: 20px;
      }
+     #button {
+         background: url('/media/arrow-204-32.png') center center no-repeat;
+     }
  }
  
  @media screen and (max-width:680px) {
@@ -438,5 +441,16 @@
      .welcome h1 {
          font-size: 20px;
      }
+     #button {
+         background: url('/media/arrow-204-32.png') center center no-repeat;
+     }
  }
-
+ 
+ @media only screen and (max-width: 500px) {
+     .welcome h1 {
+         font-size: 12px;
+     }
+     #button {
+         background: url('/media/arrow-204-32.png') center center no-repeat;
+     }
+ }

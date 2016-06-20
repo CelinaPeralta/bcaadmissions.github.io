@@ -11,6 +11,7 @@
     <link href='css/navigationbar.css' rel="stylesheet">
     <link href="css/parallax.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 
 
@@ -135,7 +136,7 @@
 
         $("#button").click(function () {
             $('html, body').animate({
-                scrollTop: $(".welcome").offset().top - 50
+                scrollTop: $(".welcome").offset().top - $('.cf').height()
             }, 2000);
         });
     </script>
