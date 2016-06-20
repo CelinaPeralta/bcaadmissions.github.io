@@ -9,8 +9,7 @@
  
  nav ul {
      -webkit-font-smoothing: antialiased;
-     text-shadow: 0 1px 0 #FFF;
-     background: #FFF36E;
+     background: #000000;
      list-style: none;
      list-style-type: none;
      margin: 0;
@@ -26,8 +25,8 @@
  }
  
  nav a {
-     background: #FFF36E;
-     color: #444;
+     background: #000000;
+     color: #FFFFFF;
      display: block;
      font-family: 'Roboto Slab', sans-serif;
      font: bold 16px/50px 'Roboto Slab', sans-serif;
@@ -42,7 +41,7 @@
  }
  
  nav li:hover a {
-     background: #FFF9B5;
+     background: #666163;
  }
  
  nav li ul {
@@ -72,7 +71,7 @@
  }
  
  nav li ul a:hover {
-     background: #FFF36E;
+     background: #9C9B9E;
  }
  /* Clearfix */
  
