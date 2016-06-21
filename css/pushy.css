@@ -202,6 +202,7 @@
 .menu-btn {
     top: 50px;
     right: 0;
+    font-family: 'Roboto Slab', sans-serif;
     text-align: right;
     position: fixed;
     font-size: 200%;
