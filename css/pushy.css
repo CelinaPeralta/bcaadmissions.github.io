@@ -207,7 +207,8 @@
     position: fixed;
     font-size: 200%;
     padding-right: 20px;
-    z-index: 50;
+    z-index: 20;
+    cursor: pointer;
 }
 
 
