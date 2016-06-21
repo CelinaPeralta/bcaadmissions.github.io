@@ -163,15 +163,11 @@
  }
  
  .dayinlife {
-     padding-left: 30px;
-     padding-right: 30px;
-     padding-bottom: 5pc;
+     padding: 75px;
  }
  
  .clubs {
-     padding-left: 30px;
-     padding-right: 30px;
-     padding-bottom: 5pc;
+     padding: 75px;
  }
  
  .projectbullets li {
@@ -225,8 +221,7 @@
  /* Start of index elements */
  
  .welcome {
-     padding-bottom: 20px;
-     padding-left: 20px;
+     padding: 75px;
  }
  
  .welcome h1 {
@@ -257,9 +252,7 @@
  }
  
  #apply {
-     padding-left: 20px;
-     padding-bottom: 20px;
-     padding-top: 10px;
+     padding: 0px 75px 75px 75px;
  }
  
  #apply h2 {
@@ -282,17 +275,13 @@
  #info {
      font-family: 'Roboto', sans-serif;
      font-weight: 100;
-     padding-left: 20px;
-     padding-bottom: 20px;
-     padding-top: 20px;
      line-height: 150%;
+     padding: 75px;
  }
  /* End of index elements */
  
  .theacademies {
-     padding-top: 40px;
-     padding-left: 30px;
-     padding-right: 30px;
+     padding: 75px;
  }
  
  .theacademies li {
@@ -304,18 +293,15 @@
  }
  
  .projectspadding {
-     padding-right: 30px;
-     padding-left: 30px;
+     padding: 75px;
  }
  
  .globaleducation {
-     padding-top: 40px;
-     padding-left: 30px;
-     padding-right: 30px;
+    padding: 75px;
  }
  
  #accolades {
-     padding: 20px 20px;
+     padding: 75px;
  }
  
  .youmust {
@@ -325,13 +311,11 @@
  }
  
  .research {
-     padding-left: 30px;
-     padding-right: 30px;
+     padding: 75px;
  }
  
  .howtoapply {
-     padding-left: 30px;
-     padding-right: 30px;
+     padding: 75px;
  }
  
  #button {
@@ -364,8 +348,7 @@
  }
  
  .sports {
-     padding-left: 30px;
-     padding-right: 30px;
+     padding: 75px;
  }
  
  .sports h1 {
@@ -391,6 +374,10 @@
      font-weight: 100;
      line-height: 150%;
  }
+
+.electives {
+    padding: 10px 75px 75px 75px;
+}
  
  @media screen and (max-width:650px) {
      ul.cf li:not(: first-child) {
